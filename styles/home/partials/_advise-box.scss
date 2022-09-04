@@ -1,0 +1,28 @@
+.advise-box{
+    width: 90%;
+    height: 40px;
+
+    margin: 0 auto;
+
+    .tag-advise-box{
+
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        margin: 0;
+        padding: 0;
+
+        background-color: #fafafa;
+
+        li{
+            height: 40px;
+            line-height: 40px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            padding: 0 15px;
+            list-style: none;
+        }
+    }
+
+}

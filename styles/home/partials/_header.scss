@@ -1,0 +1,156 @@
+header {
+
+    width: 90%;
+    height: 20%;
+    min-height: 120px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template: 
+        "image-menu name basket"
+        "content-search content-search filter"
+        / 1fr 3fr 1fr;
+
+
+    .image-menu {
+        width: 100%;
+        height: 100%;
+
+        grid-area: image-menu;
+
+        & div:first-child{
+            height: 10%;
+            width: 40%;
+            border-top: 2px solid;
+        }
+
+        & div:nth-child(2){
+            height: 10%;
+            width: 25%;
+            border-top: 2px solid ;
+        }
+
+    }
+
+    .content-name {
+        grid-area: name;
+    }
+
+    .content-basket{
+
+        grid-area: basket;
+        height: 50px;
+        width: 50px;
+
+        display: table-cell;
+        vertical-align: middle;
+
+        box-shadow: 0px 2px 1px rgba(0,0,0,0.05), 0px 0px 1px rgba(0,0,0,0.25);
+
+        border-radius: 100%;    
+        background: #ffffff;
+        text-align: center;
+        
+        img{
+            
+            height: 25px;
+            padding: 5px;
+        }
+    }
+
+
+    .content-search{
+        grid-area: content-search;
+
+        background-color: #f5f5f5;
+        border-radius: 16px;
+
+        height: 70%;
+
+        display: flex;
+        
+
+        .image-search {
+
+            background-image: url("../../../images/lupa.png");
+    
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+    
+            width: 10%;
+            height: 100%;
+    
+        }
+
+        input {
+
+            width: 90%;
+            height: 100%;
+            border-radius: 0 16px 16px 0;
+            border: 0;
+            padding: 0;
+    
+            background-color: #f5f5f5;
+    
+        }
+    
+
+    }
+
+    .content-filter{
+        grid-area: filter;
+        text-align: center;
+        height: 70%;
+        
+        img{
+            height: 100%;
+        }
+    }
+
+
+   
+
+/*
+
+.header-box {
+
+        width: 100%;
+        height: 28%;
+
+        /*display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+    }
+    .search-box {
+        width: 100%;
+        height: 60px;
+
+        isplay: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-content: space-around;
+
+
+        .content-search {
+            width: 85%;
+            height: 75%;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            background-color: #f5f5f5;
+
+            border-radius: 16px;
+
+        }
+
+        img {
+            align-self: flex-end;
+        }
+
+    }*/
+
+}

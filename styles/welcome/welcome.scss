@@ -1,0 +1,109 @@
+@import "../abstract/base";
+
+main{
+
+    
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .img-container{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        text-align: center;
+        width: 100%;
+        height: 60%;
+
+        background-color: #FFA451;
+
+        .box-image{
+
+           
+            width: 75%;
+            height: 75%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                max-width: 100%;
+            }
+
+            & img:first-child{
+
+                align-self: flex-end;
+
+            }
+
+        }
+       
+    }
+
+    .bottom-container{
+
+        width: 100%;
+        height: 35%;
+
+        .box-info{
+
+            width: 100%;
+            height: 75%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+
+        }
+
+        p{
+            margin: 0 2em;
+        }
+    
+        .title{
+            max-width: 80%;
+            color: #27214D;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            
+        }
+
+        .resume{
+            max-width: 90%;
+            color: #5D577E;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .btn-continue{
+
+    
+            margin: 0 auto ;
+            width: 90%;
+            height: 25%; 
+    
+            background-color: rgba(255, 164, 81, 1);
+            border-radius: 10px;
+            color: #ffff;
+    
+            text-align: center;
+            line-height: 2.5em;
+    
+        }
+    }
+        
+}
+
+    

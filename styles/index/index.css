@@ -1,0 +1,29 @@
+html, body {
+  margin: 0;
+  box-sizing: border-box;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+main {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .btn-start {
+  width: 50%;
+  height: 40px;
+  background-color: #FFA451;
+  box-shadow: 0px -30px 60px rgba(32, 32, 32, 0.05);
+  border-radius: 16px 0px;
+  text-align: center;
+  line-height: 40px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}/*# sourceMappingURL=index.css.map */
