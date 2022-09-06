@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html, body {
-  margin: 0;
+  font-family: "Roboto";
+  color: #27214d;
+  font-size: 12px;
   box-sizing: border-box;
-  min-width: 100vw;
-  min-height: 100vh;
+  margin: 0;
 }
 
 main {
@@ -62,7 +64,7 @@ main .bottom-container input[type=text] {
   max-width: 300px;
   height: 35px;
   border-radius: 10px;
-  background-color: #f7f5f5;
+  background-color: #e4dede;
   border-style: none;
 }
 main .bottom-container .btn-continue {
