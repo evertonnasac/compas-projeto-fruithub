@@ -1,0 +1,208 @@
+html, body {
+  margin: 0;
+  box-sizing: border-box;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.screen {
+  height: 100%;
+  width: 100%;
+  max-width: 700px;
+  background-color: #ffa451;
+}
+
+.photo-product {
+  width: 90%;
+  height: 40%;
+  position: relative;
+  margin: 0 auto;
+}
+.photo-product .btn-back {
+  width: 80px;
+  height: 32px;
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 32px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.photo-product .btn-back div:first-child {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(45deg);
+}
+.photo-product .photo-box {
+  width: 50%;
+  height: 50%;
+  max-width: 150px;
+  max-height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+.photo-product .photo-box img {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  height: 50%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+main .info-product {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+main .info-product .name-product {
+  height: 32px;
+  line-height: 32px;
+  font-size: 24px;
+  font-weight: 500;
+}
+main .info-product .qte-price-box {
+  display: flex;
+  justify-content: space-between;
+}
+main .info-product .qte-price-box p {
+  font-size: 24px;
+  font-weight: 500;
+}
+main .info-product .qte-price-box .qte-box {
+  width: 40%;
+  height: 50px;
+}
+main .info-product .qte-price-box .qte-box p, main .info-product .qte-price-box .qte-box div {
+  display: inline-block;
+  margin-right: 12px;
+}
+main .info-product .qte-price-box .qte-box .add, main .info-product .qte-price-box .qte-box .remove {
+  background-size: cover;
+  height: 15px;
+  width: 15px;
+  background-color: #fff2e7;
+  border-radius: 100%;
+}
+main .info-product .qte-price-box .qte-box .add {
+  background-image: url("../../../images/img-btn-add.png");
+}
+main .info-product .qte-price-box .qte-box .remove {
+  background-image: url("../../../images/img-btn-add.png");
+}
+main .info-product .qte-price-box .price-box {
+  width: 40%;
+  height: 50px;
+  text-align: end;
+}
+main .info-product .qte-price-box .price-box .price-product:before {
+  content: "";
+  display: inline-block;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../../images/simbolo-preco.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .info-combo {
+  height: 40%;
+  width: 100%;
+}
+main .info-combo .title {
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  height: 30px;
+  line-height: 30px;
+}
+main .info-combo .ingredients-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .info-combo .ingredients-box div {
+  min-width: 25%;
+  height: 28px;
+  background: #fafafa;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 28px;
+}
+main .info-combo p:after {
+  content: "";
+  width: 25%;
+  height: 2px;
+  background-color: #ffa451;
+  display: block;
+}
+main .message {
+  height: 30%;
+  width: 100%;
+}
+main .message p {
+  margin: 0;
+}
+
+footer {
+  width: 100%;
+  height: 10%;
+  box-sizing: border-box;
+  padding: 0 20px;
+  background-color: #ffffff;
+}
+footer .box-footer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .box-footer .icon-heart {
+  height: 25px;
+  width: 25px;
+}
+footer .box-footer .icon-heart img {
+  width: 100%;
+  height: 100%;
+}
+footer .box-footer .btn-add {
+  width: 50%;
+  height: 50px;
+  background-color: #ffa451;
+  border-radius: 10px;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (max-height: 590px) {
+  body {
+    height: 590px;
+  }
+}/*# sourceMappingURL=basket.css.map */

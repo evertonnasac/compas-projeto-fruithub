@@ -1,37 +1,34 @@
+@import "../abstract/base";
 
-body{
+body {
     height: 100vh;
     width: 100vw;
-   
+    
 }
 
-.screen{
+.screen {
 
     height: 100%;
     width: 100%;
     max-width: 700px;
-
+    
+    background-color: #ffa451
+/*
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 
-    margin: 0 auto;
+    margin: 0 auto;*/
 }
+
+@import "./partials/photo-product";
+@import "./partials/main";
+@import "./partials/footer";
 
 @media (max-height: 590px) {
 
     body{
         height: 590px;
     }
-    .screen{
-        height: inherit;
-        margin-top: 30px
-    }
+   
 }
-
-
-@import "./partials/header";
-@import "./partials/advise-box";
-@import "./partials/main"
-
-

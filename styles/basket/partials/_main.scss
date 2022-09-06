@@ -1,0 +1,150 @@
+
+main{
+    height: 50%;
+    width: 100%;
+    margin: 0 auto;
+
+    background-color: #ffffff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    box-sizing: border-box;
+
+
+    padding: 0 20px;
+    
+    .info-product{
+        height: 30%;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+
+        .name-product{
+            height: 32px;
+            line-height: 32px;
+
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .qte-price-box{
+
+            display: flex;
+            justify-content: space-between;
+
+            p{
+                font-size: 24px;
+                font-weight: 500;
+                
+            }
+          
+            .qte-box{
+                width: 40%;
+                height: 50px;
+                
+                p, div{
+                    display: inline-block;
+                    margin-right: 12px;
+
+                }
+
+                .add, .remove{
+                    background-size: cover;
+                    height: 15px;
+                    width: 15px;
+                    background-color: #fff2e7;
+                    border-radius: 100%;
+                }
+                .add {
+
+                    background-image: url("../../../images/img-btn-add.png");
+                }
+
+                .remove{
+                    background-image: url("../../../images/img-btn-add.png");
+                }
+            }
+
+            .price-box{
+                width: 40%;
+                height: 50px;
+                text-align: end;
+
+                .price-product:before{
+                    content: "";
+                
+                    display: inline-block;
+                    margin-right: 5px;
+
+                    width: 20px;
+                    height: 20px;
+
+
+                    background-image: url("../../../images/simbolo-preco.png");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                }
+            }
+
+        }
+    
+    }
+
+    .info-combo{
+        height: 40%;
+        width: 100%;
+
+        .title{
+            height: 30px;
+            line-height: 30px;
+
+            font-size: 18px;
+            font-weight: 400;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .ingredients-box{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            div{
+                min-width: 25%;
+                height: 28px;
+                background: #fafafa;
+                
+                border-radius: 10px;
+                text-align: center;
+                line-height: 28px;
+            }
+
+        }
+
+        & p:after{
+            content: '';
+            width: 25%;
+            height: 2px;
+            background-color:  #ffa451;
+            display: block;
+        }
+
+    }
+
+    .message{
+        height: 30%;
+        width: 100%;
+
+        p{
+            margin: 0;
+        }
+    
+    }
+
+}
+
+
+
