@@ -1,12 +1,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-html, body {
+$color-principal : #ffa451;
+$color-panel: #ffffff;
+
+body {
+    height: 100vh;
+    width: 100vw;
+
     font-family: "Roboto";
     color: #27214d;
     font-size: 12px;
+
     box-sizing: border-box;
     margin: 0;
     
+}
+
+@media (max-height: 590px) {
+
+    body{
+        height: 590px;
+    }
+   
 }
 

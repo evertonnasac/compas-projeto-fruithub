@@ -4,7 +4,7 @@ main{
     width: 100%;
     margin: 0 auto;
 
-    background-color: #ffffff;
+    background-color: $color-panel;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 
@@ -128,7 +128,7 @@ main{
             content: '';
             width: 25%;
             height: 2px;
-            background-color:  #ffa451;
+            background-color: $color-principal;
             display: block;
         }
 

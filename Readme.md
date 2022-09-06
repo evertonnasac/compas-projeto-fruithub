@@ -15,7 +15,7 @@
 
 <h2>Estrutura de diretórios do Projeto:<h2>
 <ul>
-    <li>Imagens</li>
+    <li>Images</li>
     <li>Pages
         <ul>
             <li>auth.html</li>

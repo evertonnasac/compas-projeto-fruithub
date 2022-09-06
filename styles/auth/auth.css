@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-html, body {
+body {
+  height: 100vh;
+  width: 100vw;
   font-family: "Roboto";
   color: #27214d;
   font-size: 12px;
@@ -7,9 +9,14 @@ html, body {
   margin: 0;
 }
 
+@media (max-height: 590px) {
+  body {
+    height: 590px;
+  }
+}
 main {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +30,7 @@ main .img-container {
   text-align: center;
   width: 100%;
   height: 60%;
-  background-color: #FFA451;
+  background-color: #ffa451;
 }
 main .img-container .box-image {
   width: 75%;

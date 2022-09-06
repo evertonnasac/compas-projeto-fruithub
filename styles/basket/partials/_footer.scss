@@ -5,7 +5,7 @@ footer{
     box-sizing: border-box;
     padding: 0 20px;
 
-    background-color: #ffffff;
+    background-color: $color-panel;;
 
     .box-footer{
         height: 100%;
@@ -28,12 +28,12 @@ footer{
             width: 50%;
             height: 50px;
 
-            background-color: #ffa451;
+            background-color: $color-principal;
             border-radius: 10px;
 
             line-height: 50px;
             text-align: center;
-            color: #ffffff;
+            color: $color-panel;
             cursor: pointer;
                 
         }

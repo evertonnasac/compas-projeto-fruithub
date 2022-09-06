@@ -1,10 +1,6 @@
 @import "../abstract/base";
 
-body{
-    height: 100vh;
-    width: 100vw;
-   
-}
+
 
 .screen{
 
@@ -21,17 +17,20 @@ body{
 
 @media (max-height: 590px) {
 
-    body{
-        height: 590px;
+    main{
+        height: 500px;
     }
-    .screen{
-        margin-top: 30px
+    body{
+        margin-top: 30px;
     }
 }
+
 
 
 @import "./partials/header";
 @import "./partials/advise-box";
 @import "./partials/main"
+
+
 
 
