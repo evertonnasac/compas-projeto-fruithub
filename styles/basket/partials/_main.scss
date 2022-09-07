@@ -1,3 +1,4 @@
+$height-price-qte: 50px;
 
 main{
     height: 50%;
@@ -9,8 +10,6 @@ main{
     border-top-right-radius: 20px;
 
     box-sizing: border-box;
-
-
     padding: 0 20px;
     
     .info-product{
@@ -42,7 +41,7 @@ main{
           
             .qte-box{
                 width: 40%;
-                height: 50px;
+                height: $height-price-qte;
                 
                 p, div{
                     display: inline-block;
@@ -69,7 +68,7 @@ main{
 
             .price-box{
                 width: 40%;
-                height: 50px;
+                height: $height-price-qte;
                 text-align: end;
 
                 .price-product:before{

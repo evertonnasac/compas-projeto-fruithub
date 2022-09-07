@@ -4,9 +4,12 @@
 $color-principal : #ffa451;
 $color-panel: #ffffff;
 
+
+
 body {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    min-height: 540px;
 
     font-family: "Roboto";
     color: #27214d;
@@ -17,11 +20,5 @@ body {
     
 }
 
-@media (max-height: 590px) {
 
-    body{
-        height: 590px;
-    }
-   
-}
 

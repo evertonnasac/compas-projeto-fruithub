@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+  min-height: 540px;
   font-family: "Roboto";
   color: #27214d;
   font-size: 12px;
@@ -9,11 +10,6 @@ body {
   margin: 0;
 }
 
-@media (max-height: 590px) {
-  body {
-    height: 590px;
-  }
-}
 .screen {
   height: 100%;
   width: 100%;

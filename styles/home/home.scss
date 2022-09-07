@@ -1,7 +1,5 @@
 @import "../abstract/base";
 
-
-
 .screen{
 
     height: 100%;
@@ -15,13 +13,10 @@
     margin: 0 auto;
 }
 
-@media (max-height: 590px) {
+@media (max-height: 540px) {
 
-    main{
-        height: 500px;
-    }
     body{
-        margin-top: 30px;
+        margin-top: 20px;
     }
 }
 
