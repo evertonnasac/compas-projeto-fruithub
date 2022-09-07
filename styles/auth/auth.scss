@@ -101,3 +101,31 @@ main{
     }
         
 }
+
+@media (min-width:599px) and (max-height:450px) {
+
+    main{
+        flex-direction: row;
+
+        .img-container{
+            height: 100%;
+        }
+
+        .bottom-container{
+            height: 80%;
+            margin: auto 0;
+
+            .box-info{
+                justify-content: center;
+
+            }
+            
+        }
+
+    }
+
+    body{
+        height: 100vh;
+        min-height:100vh;
+    }
+}

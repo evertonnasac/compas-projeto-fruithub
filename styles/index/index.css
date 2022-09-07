@@ -32,4 +32,11 @@ main .btn-start {
   letter-spacing: -0.02em;
   cursor: pointer;
   color: #FFFFFF;
+}
+
+@media (min-width: 599px) and (max-height: 450px) {
+  body {
+    height: 100vh;
+    min-height: 100vh;
+  }
 }/*# sourceMappingURL=index.css.map */

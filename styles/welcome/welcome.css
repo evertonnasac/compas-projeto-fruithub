@@ -84,4 +84,21 @@ main .bottom-container .btn-continue {
   text-align: center;
   line-height: 55px;
   cursor: pointer;
+}
+
+@media (min-width: 599px) and (max-height: 450px) {
+  main {
+    flex-direction: row;
+  }
+  main .img-container {
+    height: 100%;
+  }
+  main .bottom-container {
+    height: 80%;
+    margin: auto 0;
+  }
+}
+body {
+  height: 100vh;
+  min-height: 100vh;
 }/*# sourceMappingURL=welcome.css.map */

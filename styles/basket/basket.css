@@ -10,6 +10,10 @@ body {
   margin: 0;
 }
 
+body {
+  min-height: 620px;
+}
+
 .screen {
   height: 100%;
   width: 100%;
@@ -89,11 +93,11 @@ main .info-product .qte-price-box {
   justify-content: space-between;
 }
 main .info-product .qte-price-box p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
 }
 main .info-product .qte-price-box .qte-box {
-  width: 40%;
+  width: 35%;
   height: 50px;
 }
 main .info-product .qte-price-box .qte-box p, main .info-product .qte-price-box .qte-box div {
@@ -114,7 +118,7 @@ main .info-product .qte-price-box .qte-box .remove {
   background-image: url("../../../images/img-btn-add.png");
 }
 main .info-product .qte-price-box .price-box {
-  width: 40%;
+  width: 55%;
   height: 50px;
   text-align: end;
 }
