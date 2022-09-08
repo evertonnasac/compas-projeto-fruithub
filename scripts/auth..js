@@ -1,12 +1,21 @@
 const input = document.querySelector("[name = name]")
 const btnStart = document.querySelector(".btn-continue")
 
-btnStart.addEventListener("click", ()=>{
-    if(!input.value){
-        alert("Por favor, informe um nome!")
+const goNextPage = (name) =>{
+    if(!name){
+        alert("Por favor, informe seu nome!")
         return
     }
-    const name = input.value
     document.location.href = `./home.html?name=${name}`
+}
 
+btnStart.addEventListener("click", ()=>{
+    goNextPage(input.value)
+})
+
+input.addEventListener("keydown", (e)=>{
+    if(e.key == "Enter"){
+        goNextPage(input.value)
+    }
+    
 })

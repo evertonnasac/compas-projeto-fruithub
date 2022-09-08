@@ -1,15 +1,4 @@
 const imgProductArray = document.querySelectorAll(".img-product")
-const pName = document.querySelector(".name")
-
-const urlParams = new URLSearchParams(window.location.search)
-const nameUser = urlParams.get("name") 
-
-if(nameUser){
-    localStorage.setItem("nameUser", nameUser)
-}
-
-pName.innerHTML = localStorage.getItem("nameUser")
-
 imgProductArray.forEach(product => {
     product.addEventListener("click",(e)=> {
         const idProduct = e.target.getAttribute("id")
@@ -18,34 +7,47 @@ imgProductArray.forEach(product => {
     })
 })
 
+const pName = document.querySelector(".name")
+
+const urlParams = new URLSearchParams(window.location.search)
+let nameUser = urlParams.get("name")
+
+if(nameUser){
+
+    nameUser = nameUser.split(" ")[0]
+    nameUser.length > 19 && (nameUser = nameUser.substring(0,19))
+    localStorage.setItem("nameUser", nameUser)
+}
+
+pName.innerHTML = "Welcome, "+localStorage.getItem("nameUser")
 
 const getProduct = (id) =>{
     
     const product = {
         p1 : {
             name : "Honey lime combo",
-            urlPhoto : "../images/img-Honey-Lime-Peach-Fruit-Sad.png",
+            photo : "img-Honey-Lime-Peach.png",
             price: "2,000"
         },
         p2 : {
             name : "Berry mango combo",
-            urlPhoto : "../images/img-Glowing-Berry-Fruit-Salad.png",
+            photo : "img-Glowing-Berry.png",
             price: "2,000"
         },
         p3 : {
             name : "Quinoa fruit salad",
-            urlPhoto : "../images/img-breakfast-quinoa-and-red-fruit-salad.png",
+            photo : "img-breakfast-quinoa-and-red.png",
             price: "10,000"
         },
         p4 : {
             name : "Tropical fruit salad",
-            urlPhoto : "../images/img-Best-Ever-Tropical-Fruit-Salad.png",
+            photo : "img-Best-Ever-Tropical.png",
             price: "10,000"
         }
     }
     return product[id]
 }
 
-const addProductBasket = ({name, urlPhoto, price}) =>{
-    window.location.href = `./basket.html?name=${name}&photo=${urlPhoto}&price=${price}`
+const addProductBasket = ({name, photo, price}) =>{
+    window.location.href = `./basket.html?name=${name}&photo=${photo}&price=${price}`
 }
