@@ -106,16 +106,18 @@ main .info-product .qte-price-box .qte-box p, main .info-product .qte-price-box 
 }
 main .info-product .qte-price-box .qte-box .add, main .info-product .qte-price-box .qte-box .remove {
   background-size: cover;
-  height: 15px;
   width: 15px;
   background-color: #fff2e7;
   border-radius: 100%;
 }
 main .info-product .qte-price-box .qte-box .add {
   background-image: url("../../../images/img-btn-add.png");
+  height: 15px;
 }
 main .info-product .qte-price-box .qte-box .remove {
-  background-image: url("../../../images/img-btn-add.png");
+  background-image: url("../../../images/img-btn-remove.png");
+  height: 5px;
+  margin-bottom: 5px;
 }
 main .info-product .qte-price-box .price-box {
   width: 55%;

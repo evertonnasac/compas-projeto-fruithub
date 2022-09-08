@@ -51,18 +51,19 @@ main{
 
                 .add, .remove{
                     background-size: cover;
-                    height: 15px;
                     width: 15px;
                     background-color: #fff2e7;
                     border-radius: 100%;
                 }
                 .add {
-
                     background-image: url("../../../images/img-btn-add.png");
+                    height: 15px;
                 }
 
                 .remove{
-                    background-image: url("../../../images/img-btn-add.png");
+                    background-image: url("../../../images/img-btn-remove.png");
+                    height:5px;
+                    margin-bottom: 5px;
                 }
             }
 
